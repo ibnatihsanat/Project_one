@@ -1,33 +1,13 @@
-/* .article {
-    display: flex;
-    position: relative;
-}
-
-.article aside {
-    min-width: 300px;
-    width: 300px;
-    padding: 14px 7px;
-    background-color: bisque;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-}
-
-.article.section {
-    margin-left: 300px;
-    height: (loovh -150px);
-    background-color: cornsilk;
-
-} */
-.container {
+.article {
     display: flex;
     position: relative;
     margin-bottom: 40px;
+    outline: solid 2px bisque;
 }
 
-.container aside {
-    min-width: 300px;
-    width: 300px;
+.article aside {
+    min-width: 12%;
+    width: 12%;
     height: auto;
     padding: 16px 8px;
     background-color: goldenrod;
@@ -36,9 +16,10 @@
     position: absolute;
 }
 
-.container .section {
-    margin-left: 310px;
+.article .section {
+    margin-left: 15%;
     height: calc(100vh - 80px);
+    width: calc(100% - 0%);
     background-color: rgb(236, 187, 63);
     overflow-y: scroll;
 }
@@ -46,4 +27,11 @@
 aside nav ul {
     display: flex;
     flex-direction: column;
+}
+
+#unique {
+    width: 100%;
+    min-width: calc(100vw-80px);
+    margin: 0;
+    margin-top: 100px;
 }
