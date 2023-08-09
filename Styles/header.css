@@ -6,12 +6,15 @@ body {
     padding: 0px;
     margin: 0px;
     font-family: 'Poppins', sans-serif;
+    width: 100%;
 }
 
 h1,
+h2,
 h4 {
     margin: 0px;
     padding: 0px;
+    color: gold;
 }
 
 button {
@@ -22,7 +25,7 @@ header {
     background-color: goldenrod;
     padding: 0px 50px;
     height: 80px;
-    width: 100vw;
+    width: 100%;
     /* min-width: calc(100vw-400px); */
     display: flex;
     flex-direction: row;
@@ -85,4 +88,43 @@ main {
 
 .profile svg path {
     fill: bisque;
+}
+
+.hambuger {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 0px 14px;
+        height: 80px;
+        background-color: goldenrod;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        color: blanchedalmond;
+    }
+
+    .profile,
+    header nav {
+        display: none;
+    }
+
+    .hambuger {
+        display: block;
+        background: transparent;
+        border: none;
+        outline: none;
+        width: 40px;
+        height: 40px;
+    }
+
+    .hambuger svg {
+        transform: scale(0.8);
+    }
+
+    .hambuger svg path {
+        fill: blanchedalmond;
+    }
 }
